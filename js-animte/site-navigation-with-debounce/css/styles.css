@@ -1,0 +1,51 @@
+html, body{
+    margin: 0;
+    background: #eee;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+}
+
+.menu a{
+    color: inherit;
+    line-height: 50px;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.4s;
+}
+
+.menu .menu__link-active{
+    color: #ff0;
+}
+
+.content{
+   margin-top: 70px;
+}
+
+
+.btnUp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #000;
+    color:white;
+    height: 50px;
+    width:50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none; /* свойство при котором на кнопку неьзя нажать */
+}
+.btnUp-visible {
+    pointer-events: auto;
+    opacity: 1;
+}
